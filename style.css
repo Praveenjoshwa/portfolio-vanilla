@@ -464,8 +464,13 @@ footer p {
 .flip-card-back {
     transform: rotateY(180deg);
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem 1rem;
+}
+
+.flip-card-back .btn-container {
+    margin-top: auto;
+    margin-bottom: 1rem;
 }
 
 .project-description {
