@@ -21,12 +21,14 @@ p {
 }
 
 /* transition */
-a, .btn {
+a,
+.btn {
     transition: all 300ms ease;
 }
 
 /* navigation */
-nav, .nav-link {
+nav,
+.nav-link {
     display: flex;
 }
 
@@ -217,12 +219,14 @@ section {
     transition: all 300ms ease;
 }
 
-.btn-color-1, .btn-color-2 {
+.btn-color-1,
+.btn-color-2 {
     border: 0.1rem solid #00ffff;
     color: #00ffff;
 }
 
-.btn-color-1:hover, .btn-color-2:hover {
+.btn-color-1:hover,
+.btn-color-2:hover {
     cursor: pointer;
     background: #00ffff;
     color: #0a0f1c;
@@ -252,7 +256,8 @@ section {
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
@@ -400,91 +405,93 @@ footer p {
     border: 3px solid #00ffff;
     border-radius: 50%;
     box-shadow: 0 0 10px #00ffff,
-                0 0 20px #00ffff,
-                0 0 30px #00ffff,
-                0 0 40px #00ffff;
+        0 0 20px #00ffff,
+        0 0 30px #00ffff,
+        0 0 40px #00ffff;
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .glow-border:hover {
     box-shadow: 0 0 20px #00ffff,
-                0 0 30px #00ffff,
-                0 0 40px #00ffff,
-                0 0 50px #00ffff;
+        0 0 30px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff;
 }
 
 /* Flip Card */
 .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 450px;
-  perspective: 1000px;
-  margin: 2rem auto;
+    background-color: transparent;
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 2rem auto;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  background-color: #0f0f0f;
-  border: 2px solid #00ffff;
-  box-shadow: 0 1px  rgba(0, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    border: 2px solid #00ffff;
+    box-shadow: 0 1px rgba(0, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-front {
-  /* padding: 1rem; */
-  gap: 1rem;
+    /* padding: 1rem; */
+    gap: 1rem;
 }
 
 .flip-card-back {
-  transform: rotateY(180deg);
- 
-  text-align: center;
+    transform: rotateY(180deg);
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
 }
 
 .project-description {
-  color: #b3dfff;
-  font-size: 1rem;
-  line-height: 1.6;
+    color: #b3dfff;
+    font-size: 1rem;
+    line-height: 1.6;
 }
+
 /* Flip effect on desktop */
 .flip-card-inner {
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* Enable tap flipping on mobile via JS */
 .flip-card-inner.flipped {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* Disable hover flipping on mobile */
 @media (hover: none) and (pointer: coarse) {
-  .flip-card:hover .flip-card-inner {
-    transform: none;
-  }
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
 }
