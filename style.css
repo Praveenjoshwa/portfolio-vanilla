@@ -465,7 +465,8 @@ footer p {
     transform: rotateY(180deg);
     text-align: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
+    padding: 10px;
 }
 
 .flip-card-back .btn-container {
@@ -477,6 +478,10 @@ footer p {
     color: #b3dfff;
     font-size: 1rem;
     line-height: 1.6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Flip effect on desktop */
